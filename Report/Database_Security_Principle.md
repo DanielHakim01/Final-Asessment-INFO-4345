@@ -1,5 +1,5 @@
 
-# 5. Database Security Principles
+# 6. Database Security Principles
 
 To secure our database, we omit the database credentials in each webpage that requires to call the information from the database. We put the credentials in config.php and call through that file instead.
 
