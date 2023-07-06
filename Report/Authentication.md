@@ -21,7 +21,7 @@ Here user needs to input their credentials such as username and password. <br>
       
 ------
 
-![](screenshot/register.png)
+![](https://github.com/DanielHakim01/Final-Asessment-INFO-4345/blob/2bbc3703de711e1d6d9f6b011ab132216c989666/screenshot/register.png)
 
 When user input their username and password and submitted the form, it will check in the database for any existing account with the same username.<br>
 
@@ -58,7 +58,7 @@ When user input their username and password and submitted the form, it will chec
 
 If existing username is found, it will prompt a pop up window.
 
-![](screenshot/userExist.png)
+![](https://github.com/DanielHakim01/Final-Asessment-INFO-4345/blob/2bbc3703de711e1d6d9f6b011ab132216c989666/screenshot/userExist.png)
 
 If username is not found it will be stored in the database. <br>
 Their password will be hashed and stored in the database. <br>
@@ -86,11 +86,11 @@ Their password will be hashed and stored in the database. <br>
 
 ------
 
- ![](screenshot/hashedpass.png)
+ ![](https://github.com/DanielHakim01/Final-Asessment-INFO-4345/blob/2bbc3703de711e1d6d9f6b011ab132216c989666/screenshot/hashedpass.png)
 
 If username is not found, then user will be registered.
 
-![](screenshot/registerSuccess.png)
+![](https://github.com/DanielHakim01/Final-Asessment-INFO-4345/blob/2bbc3703de711e1d6d9f6b011ab132216c989666/screenshot/registerSuccess.png)
 
 User will be redirected to the login page. <br><br>
 
@@ -118,7 +118,7 @@ User need to enter their username and password in order fer them to be authentic
     </form>
 ---------------------
 
-![](screenshot/loginpage.png)
+![](https://github.com/DanielHakim01/Final-Asessment-INFO-4345/blob/2bbc3703de711e1d6d9f6b011ab132216c989666/screenshot/loginpage.png)
 
 Once user click the log in button it wil call the [login.php](html/login.php) <br>
 Here, username and password will be compared to the username and hashed password in the database. <br>
@@ -165,6 +165,6 @@ Here, username and password will be compared to the username and hashed password
 
 If Username or pasword did not match or wrong, a window will pop out. <br>
 
-![](screenshot/loginCannot.png)
+![](https://github.com/DanielHakim01/Final-Asessment-INFO-4345/blob/2bbc3703de711e1d6d9f6b011ab132216c989666/screenshot/loginCannot.png)
 
 User will need to enter the correct username and password in order for them to authenticated again. <br><br>
