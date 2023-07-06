@@ -33,7 +33,7 @@ First, user need to enter their username and password to continue.
 
 ![](https://github.com/DanielHakim01/Final-Asessment-INFO-4345/blob/666c35215b11647eafe46180566cc8e9ccf420c6/screenshot/loginpage.png)
 
-Once user click the log in button it wil call the [login.php](After/Controller/login.php) <br>
+Once user click the log in button it wil call the [login.php](https://github.com/DanielHakim01/Final-Asessment-INFO-4345/blob/666c35215b11647eafe46180566cc8e9ccf420c6/After/Controller/login.php) <br>
 Here, username and password will be compared to the username and hashed password in the database. <br>
 
 ---------------------
@@ -138,7 +138,7 @@ The username, session id and activity of each session will be recorded.
 ---------------------
 
 Once user have been authenticate and authorized, user will be redirected to the home page. <br>
-The [idle.php](After/Controller/idle.php) is responsible for the idle timeout. <br>
+The [idle.php](https://github.com/DanielHakim01/Final-Asessment-INFO-4345/blob/dc47654df63336a709a4d4c9a47e7cdd599d0f21/After/Controller/idle.php) is responsible for the idle timeout. <br>
 Here a timer will be assigned, if user is not active within 60 seconds, user will be log out automatically and their session will be destroyed. <br>
 While if user is active, their session will continue until the last-activity did not detect any activity. <br>
 
