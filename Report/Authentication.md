@@ -4,6 +4,9 @@ In this part, we will be implementing Authentication measures which are:. <br>
 1. Identification
 2. Confirmation
 3. Hashed password
+4. Authentication
+
+## Identification
 
 Firstly, new user will need to register their account before they can access the web application. <br>
 Here user needs to input their credentials such as username and password. <br>
@@ -56,9 +59,13 @@ When user input their username and password and submitted the form, it will chec
           echo "<script>showError('Error: Could not register user. Please try again.');</script>";
 ------
 
+## Confirmation
+
 If existing username is found, it will prompt a pop up window.
 
 ![](https://github.com/DanielHakim01/Final-Asessment-INFO-4345/blob/2bbc3703de711e1d6d9f6b011ab132216c989666/screenshot/userExist.png)
+
+## Hashed password
 
 If username is not found it will be stored in the database. <br>
 Their password will be hashed and stored in the database. <br>
@@ -119,6 +126,8 @@ User need to enter their username and password in order fer them to be authentic
 ---------------------
 
 ![](https://github.com/DanielHakim01/Final-Asessment-INFO-4345/blob/2bbc3703de711e1d6d9f6b011ab132216c989666/screenshot/loginpage.png)
+
+## Authentication
 
 Once user click the log in button it wil call the [login.php](html/login.php) <br>
 Here, username and password will be compared to the username and hashed password in the database. <br>
