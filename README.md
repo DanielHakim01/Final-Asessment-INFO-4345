@@ -27,10 +27,10 @@ This project is also to implement security approaches that we have learnt in cla
 ## WEB APPLICATION SECURITY ENHANCEMENTS
 
 We will be implementing these security enhancements into the web application.
-1. [Input Validation](Report/Input_Validation.md)
-2. [Authentication](Report/Authentication.md)
-3. [Authorization](Report/Authorization.md)
-4. [XSS Prevention](Report/XSS.md)
-5. [CSRF Prevention](Report/CSRF.md)
-6. [Database Security Principles](Report/Database_Security_Principle.md)
-7. [File Security Principles](Report/File_Security_Principle.md)
+1. [Input Validation](Report/Input_Validation.md) [Abu]
+2. [Authentication](Report/Authentication.md) [Daniel]
+3. [Authorization](Report/Authorization.md) [Daniel]
+4. [XSS Prevention](Report/XSS.md) [Amiruddin]
+5. [CSRF Prevention](Report/CSRF.md) [Hazim]
+6. [Database Security Principles](Report/Database_Security_Principle.md) [Amiruddin]
+7. [File Security Principles](Report/File_Security_Principle.md) [Hazim]
