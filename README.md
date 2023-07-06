@@ -5,10 +5,10 @@ SEM 2 2022/2023 <br> <br>
 GROUP ADHD <br> <br>
 
 GROUP MEMBER: <br> <br>
- MUHAMMAD DANIEL HAKIM BIN MOHD SUHAIMI 2018451 <br> <br>
- ONG <br> <br>
- ABU ZHARR LUQMAN BIN ABDUL AZIZ 2011733<br> <br>
- DIN <br> <br>
+MUHAMMAD DANIEL HAKIM BIN MOHD SUHAIMI 2018451 <br> <br>
+MUHAMMAD HAZIM BIN NOR AIZI 2017455 <br> <br>
+ABU ZHARR LUQMAN BIN ABDUL AZIZ 2011733<br> <br>
+MUHAMMAD AMIRUDDIN BIN ALIAS 2011349 <br> <br>
 </h2>
 
 ## INTRODUCTION
@@ -20,6 +20,9 @@ This web application is to help IIUM students to easily book venue or facilities
 This website originally is just a static website with no authentication or authorization mechanism and database to store any user credentials and booking made. Our job is to transform this website into a functional web application with secure web development approach.
 
 ## OBJECTIVE
+
+The objective of this project is to apply security measures to an unprotected website and make it funtinable as a web application<br>
+This project is also to implement security approaches that we have learnt in class to a real website.
 
 ## WEB APPLICATION SECURITY ENHANCEMENTS
 
