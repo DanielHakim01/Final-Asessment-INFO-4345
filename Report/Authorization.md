@@ -37,16 +37,16 @@ Once user click the log in button it wil call the [login.php](https://github.com
 Here, username and password will be compared to the username and hashed password in the database. <br>
 
 ---------------------
-   if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Check if user has submitted the form
-    if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['csrf_token'])) {
-        // Validate CSRF token
-        if ($_POST['csrf_token'] !== $_SESSION['csrf_token']) {
-            // Show error message and redirect to login page
-            exit('Error: Invalid CSRF token.');
-        } else {
-            $username = $_POST['username'];
-            $password = $_POST['password'];
+         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+          // Check if user has submitted the form
+          if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['csrf_token'])) {
+              // Validate CSRF token
+              if ($_POST['csrf_token'] !== $_SESSION['csrf_token']) {
+                  // Show error message and redirect to login page
+                  exit('Error: Invalid CSRF token.');
+              } else {
+                  $username = $_POST['username'];
+                  $password = $_POST['password'];
 
             // Whitelist validation using regex
             $username_pattern = '/^[a-zA-Z0-9_]{3,20}$/'; // Allow alphanumeric and underscore, 3-20 characters
@@ -75,14 +75,8 @@ Here, username and password will be compared to the username and hashed password
 
                 // Verify password
                 if (password_verify($password, $db_password)) {
-                    // Login successful, generate random session ID
-                    $session_id = bin2hex(random_bytes(16));
 
-                    // Save user session with random session ID and last activity time
-                    $_SESSION['username'] = $username;
-                    $_SESSION['session_id'] = $session_id;
-                    $_SESSION['last_activity'] = time();
-
+                      //session code below put here
                     // Redirect to home.php or privilege.php if the username is "admin"
                     if ($username === 'admin') {
                         header("Location: privilege.php");
@@ -111,6 +105,8 @@ If Username or pasword did not match or wrong, a window will pop out. <br>
 
 User will need to enter the correct username and password in order for them to access the web application. <br><br>
 
+## Session ID using cryptographically secure random number generator (CSPRNG)
+
 If Login is successful, session ID will be created using cryptographically Random Session IDs.<br>
 When true is pass as the argument to session_regenerate_id(), it instructs PHP to use a CSPRNG to generate a new session ID.<br>
 PHP uses the underlying operating system's CSPRNG, which ensures that the generated session ID is highly unpredictable and suitable for secure session management. This helps protect against session fixation attacks and enhances the security of application.<br>
@@ -136,6 +132,8 @@ The username, session id and activity of each session will be recorded.
                 $_SESSION['session_id'] = $session_id;
                 $_SESSION['last_activity'] = time();
 ---------------------
+
+## Idle timeout and Session management
 
 Once user have been authenticate and authorized, user will be redirected to the home page. <br>
 The [idle.php](https://github.com/DanielHakim01/Final-Asessment-INFO-4345/blob/dc47654df63336a709a4d4c9a47e7cdd599d0f21/After/Controller/idle.php) is responsible for the idle timeout. <br>
@@ -207,6 +205,7 @@ This line will be needed in every php code in order to call the [idle.php](html/
 
 ---------------------
 
+## Log out
 
 User can also log out of their session by clicking the log out button.<br>
 Once logged out it will clear all session variables, destroy the session, and then redirect the user back to the login page. By doing so, the user effectively logs out of their session.<br>
