@@ -31,9 +31,9 @@ First, user need to enter their username and password to continue.
       </form>
 ---------------------
 
-![](screenshot/loginpage.png)
+![](https://github.com/DanielHakim01/Final-Asessment-INFO-4345/blob/666c35215b11647eafe46180566cc8e9ccf420c6/screenshot/loginpage.png)
 
-Once user click the log in button it wil call the [login.php](html/login.php) <br>
+Once user click the log in button it wil call the [login.php](After/Controller/login.php) <br>
 Here, username and password will be compared to the username and hashed password in the database. <br>
 
 ---------------------
@@ -107,7 +107,7 @@ Here, username and password will be compared to the username and hashed password
 
 If Username or pasword did not match or wrong, a window will pop out. <br>
 
-![](screenshot/loginCannot.png)
+![](https://github.com/DanielHakim01/Final-Asessment-INFO-4345/blob/666c35215b11647eafe46180566cc8e9ccf420c6/screenshot/loginCannot.png)
 
 User will need to enter the correct username and password in order for them to access the web application. <br><br>
 
@@ -138,7 +138,7 @@ The username, session id and activity of each session will be recorded.
 ---------------------
 
 Once user have been authenticate and authorized, user will be redirected to the home page. <br>
-The [idle.php](html/idle.php) is responsible for the idle timeout. <br>
+The [idle.php](After/Controller/idle.php) is responsible for the idle timeout. <br>
 Here a timer will be assigned, if user is not active within 60 seconds, user will be log out automatically and their session will be destroyed. <br>
 While if user is active, their session will continue until the last-activity did not detect any activity. <br>
 
@@ -195,7 +195,7 @@ While if user is active, their session will continue until the last-activity did
 
 A pop out will be shown when a user is in idle.
 
-![](screenshot/sessionEx.png)
+![](https://github.com/DanielHakim01/Final-Asessment-INFO-4345/blob/666c35215b11647eafe46180566cc8e9ccf420c6/screenshot/sessionEx.png)
 
 This line will be needed in every php code in order to call the [idle.php](html/idle.php)
 
