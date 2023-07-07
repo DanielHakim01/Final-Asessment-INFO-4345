@@ -27,6 +27,7 @@ This project is also to implement security approaches that we have learnt in cla
 ## WEB APPLICATION SECURITY ENHANCEMENTS
 
 We will be implementing these security enhancements into the web application.
+0. Code Debugging [Abu]
 1. [Input Validation](Report/Input_Validation.md) [Abu]
 2. [Authentication](Report/Authentication.md) [Daniel]
 3. [Authorization](Report/Authorization.md) [Daniel]
