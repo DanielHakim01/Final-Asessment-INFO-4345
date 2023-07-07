@@ -40,7 +40,7 @@ Rather than making a file containing X-Frame-Options and CSP, we insert 2 lines 
 
 ## Header Response
 
-![](screenshot/CSRFheader.png)
+![](https://github.com/DanielHakim01/Final-Asessment-INFO-4345/blob/0da61486ea6873fcd82b95c6c18cfe65d6881949/screenshot/CSRFheader.png)
 
 ## Anti-CSRF token
 
