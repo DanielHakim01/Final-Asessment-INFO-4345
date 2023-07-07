@@ -1,13 +1,12 @@
 ### 5. CSRF Prevention
 
-### Content Security Policy
+## Content Security Policy
 CSP header sets the policy to allow content only from the same origin ('self')
 Preventing clickjacking attacks (X-Frame-Options)
 Enforcing a content security policy to mitigate cross-site scripting (XSS) and other code injection vulnerabilities (Content-Security-Policy).
 
-      header("Content-Security-Policy: default-src 'self';");
-
-### X-Frame-Options
+            Header always set Content-Security-Policy "default-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; media-src 'self'"
+## X-Frame-Options
 
 ------
         <?php
@@ -26,26 +25,24 @@ This option specifies that the page should not be displayed in any frame or ifra
 
  This option allows the page to be displayed in a frame or iframe only if the site embedding the page has the same origin (same domain, protocol, and port) as the page itself. It provides a balance between security and usability, allowing the page to be embedded on the same domain.
 
-### Security Purpose 
-
+## Security Purpose 
  Control the framing behavior of your web pages and protect them from being maliciously embedded in iframes on other websites. It helps to ensure that your website is displayed within a trusted context and prevents potential security vulnerabilities.
 
 
-### Shortcut
+## Shortcut
 Rather than making a file containing X-Frame-Options and CSP, we insert 2 lines of code in the httpd.config file as apache configuration  and it will automatically called the CSP and X-Frame-Options in every header
 
 ------
      Header always set X-Frame-Options "SAMEORIGIN" 
 ------
 
-    Header always set Content-Security-Policy "default-src 'self'"
-------
+     Header always set Content-Security-Policy "default-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; media-src 'self'"------
 
-#### Header Response
+## Header Response
 
-![](https://github.com/DanielHakim01/Final-Asessment-INFO-4345/blob/f1f21fc6024f7e447b4e3d32c1958b151acd2da7/screenshot/CSRF%20header.png)
+![](screenshot/CSRFheader.png)
 
-### Anti-CSRF token
+## Anti-CSRF token
 
 Generating an CSRF token whenever a user register or logs in. In a session, it persists throughout the session until the user logs out. To avoid session hijacking, the website validates the CSRF token attached to the user's session, through the header or hidden input. If the CSRF token is mismatched user will be exited from the home page. If it matches, user can continue browsing as usual.
 
@@ -99,4 +96,5 @@ Through the hidden input field
       <input type="submit" value="LOG IN"/>
   
 -----
+
 
