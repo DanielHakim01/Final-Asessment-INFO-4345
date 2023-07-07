@@ -26,8 +26,8 @@ This project is also to implement security approaches that we have learnt in cla
 
 ## WEB APPLICATION SECURITY ENHANCEMENTS
 
-We will be implementing these security enhancements into the web application.
-0. Code Debugging [Abu]
+We will be implementing these security enhancements into the web application. <br>
+
 1. [Input Validation](Report/Input_Validation.md) [Abu]
 2. [Authentication](Report/Authentication.md) [Daniel]
 3. [Authorization](Report/Authorization.md) [Daniel]
@@ -35,3 +35,4 @@ We will be implementing these security enhancements into the web application.
 5. [CSRF Prevention](Report/CSRF.md) [Hazim]
 6. [Database Security Principles](Report/Database_Security_Principle.md) [Amiruddin]
 7. [File Security Principles](Report/File_Security_Principle.md) [Hazim]
+8. Code Debugging [Abu]
