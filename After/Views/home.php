@@ -90,9 +90,9 @@
 <div class="main">
     <div class="pill-nav">
       <a style="color: white;" href="home.php"  class="active">Home</a>
-      <!-- <a style="color: #1b9284;" href="menuGP.php">Menu</a>
-      <a style="color: #1b9284;" href="faci_info.php">Facilities</a> -->
-      <a style="color: #1b9284;" href="login.php">Login</a>
+      <a style="color: #1b9284;" href="menuGP.php">Menu</a>
+      <a style="color: #1b9284;" href="faci_info.php">Facilities</a>
+      <a style="color: #1b9284;" href="logout.php">Logout</a>
     </div>
 <centre>
 <h1 >IIUM SPORT CENTRE</h1>
